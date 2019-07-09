@@ -22,6 +22,33 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/Desktop/commons-beanutils-1.9.3" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$USER_HOME$/Desktop/commons-beanutils-1.9.3/apidocs" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="file://$USER_HOME$/Desktop/commons-beanutils-1.9.3" />
+        </SOURCES>
+        <jarDirectory url="file://$USER_HOME$/Desktop/commons-beanutils-1.9.3" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/Desktop/commons-beanutils-1.9.3" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/Desktop/commons-logging-1.2" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$USER_HOME$/Desktop/commons-logging-1.2/apidocs" />
+        </JAVADOC>
+        <SOURCES />
+        <jarDirectory url="file://$USER_HOME$/Desktop/commons-logging-1.2" recursive="false" />
+      </library>
+    </orderEntry>
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.26" level="project" />
