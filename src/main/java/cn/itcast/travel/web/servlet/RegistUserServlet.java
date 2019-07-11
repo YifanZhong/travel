@@ -24,34 +24,34 @@ public class RegistUserServlet extends HttpServlet {
         Map<String, String[]> map = request.getParameterMap();
         //2.封装对象
         User user = new User();
-        try{
-            BeanUtils.populate(user,map);
-        } catch (IllegalAccessException e){
+        try {
+            BeanUtils.populate(user, map);
+        } catch (IllegalAccessException e) {
             e.printStackTrace();
-        } catch (InvocationTargetException e){
+        } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
 
 
 
-        //3.调用Service完成注册
+        //3.调用service完成注册
         UserService service = new UserServiceImpl();
         boolean flag = service.regist(user);
-        ResultInfo resultInfo = new ResultInfo();
+        ResultInfo info = new ResultInfo();
         //4.响应结果
-        if (flag){
-            //注册成功
-            resultInfo.setFlag(true);
-        }else{
-            //注册失败
-            resultInfo.setFlag(false);
-            resultInfo.setErrorMsg("注册失败");
+        if (flag) {
+            // 注册成功
+            info.setFlag(true);
+        } else {
+            // 注册失败
+            info.setFlag(false);
+            info.setErrorMsg("注册失败！！！");
         }
 
 
         //将resultInfo对象序列化成json
-        ObjectMapper objectMapper = new ObjectMapper();
-        String json = objectMapper.writeValueAsString(resultInfo);
+        ObjectMapper mapper = new ObjectMapper();
+        String json = mapper.writeValueAsString(info);
 
 
         //将json数据写回客户端

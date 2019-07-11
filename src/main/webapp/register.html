@@ -126,9 +126,9 @@
 			    //当表单提交时，校验所有方法
                 $("#registerForm").submit(function () {
                     //1.发送数据到服务器
+					//return (checkUsername() && checkPassword() && checkEmail() && checkName() && checkPhonenumber() && checkBirthday());
 
-
-                    if (checkUsername() && checkPassword() && checkEmail() && checkName() && checkPhonenumber() && checkBirthday(){
+                    if (checkUsername() && checkPassword() && checkEmail() && checkName() && checkPhonenumber() && checkBirthday()){
                         //校验通过，发送ajax请求，提交表单的数据    username=zhangsan&password=12345
                         $.post("registUserServlet", $(this).serialize(), function (data) {
                             //处理服务器相应的数据  data
@@ -149,7 +149,6 @@
                 $("#name").blur(checkName);
                 $("#telephone").blur(checkPhonenumber);
                 $("#birthday").blur(checkBirthday);
-
 
             });
 

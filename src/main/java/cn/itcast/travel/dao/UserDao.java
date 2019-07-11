@@ -9,7 +9,7 @@ public interface UserDao {
      * @param username
      * @return
      */
-    public User findByUserName(String username);
+    public User findByUsername(String username);
 
 
     /**

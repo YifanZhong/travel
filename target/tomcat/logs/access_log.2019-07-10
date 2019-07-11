@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [10/Jul/2019:14:59:41 +1200] "GET /travel/register.html HTTP/1.1" 304 - http-bio-80-exec-1 45
+0:0:0:0:0:0:0:1 - - [10/Jul/2019:14:59:45 +1200] "GET /travel/checkCode HTTP/1.1" 200 238 http-bio-80-exec-3 3937
+0:0:0:0:0:0:0:1 - - [10/Jul/2019:14:59:54 +1200] "GET /travel/checkCode?1562727594436 HTTP/1.1" 200 272 http-bio-80-exec-4 6
+0:0:0:0:0:0:0:1 - - [10/Jul/2019:14:59:56 +1200] "GET /travel/register.html?action=register&username=aaaaaaaaaaaa&password=aaaaaaaaaaaa&email=ivanzhong0310%40gamil.com&name=Ivan+Zhong&telephone=17888888888&sex=%E7%94%B7&birthday=2019-07-01&check= HTTP/1.1" 200 9279 http-bio-80-exec-5 4
+0:0:0:0:0:0:0:1 - - [10/Jul/2019:14:59:56 +1200] "GET /travel/checkCode HTTP/1.1" 200 285 http-bio-80-exec-7 11

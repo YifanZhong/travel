@@ -1,9 +1,13 @@
 package cn.itcast.travel.service.impl;
 
+import cn.itcast.travel.dao.UserDao;
+import cn.itcast.travel.dao.impl.UserDaoImpl;
 import cn.itcast.travel.domain.User;
 import cn.itcast.travel.service.UserService;
 
 public class UserServiceImpl implements UserService {
+
+    private UserDao userDao = new UserDaoImpl();
 
     /**
      * 注册用户
@@ -13,9 +17,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public boolean regist(User user){
         //1.根据用户名查询用户对象
-
+        User u = userDao.findByUsername(user.getUsername());
+        //判断userName是否null
+        if (u != null){
+            //用户名存在，注册失败
+            return false;
+        }
         //2.保存用户信息
-        return false;
+        userDao.save(user);
+        return true;
     }
 
 }
