@@ -4,6 +4,8 @@ import cn.itcast.travel.dao.UserDao;
 import cn.itcast.travel.dao.impl.UserDaoImpl;
 import cn.itcast.travel.domain.User;
 import cn.itcast.travel.service.UserService;
+import cn.itcast.travel.util.MailUtils;
+import cn.itcast.travel.util.UuidUtil;
 
 public class UserServiceImpl implements UserService {
 
@@ -24,8 +26,28 @@ public class UserServiceImpl implements UserService {
             return false;
         }
         //2.保存用户信息
+        //2.1设置激活码，唯一字符串
+        user.setCode(UuidUtil.getUuid());
+        //2.2设置激活状态
+        user.setStatus("N");
         userDao.save(user);
+        //2.3激活邮件发送，邮件正文？
+        String content = "<a href = 'http://localhost/travel/activeUserServlet?code="+user.getCode()+"'>点击激活，【黑马旅游网】</a>";
+
+        MailUtils.sendMail(user.getEmail(),content,"激活邮件");
+
         return true;
+    }
+
+
+    /**
+     * 激活用户
+     * @param code
+     * @return
+     */
+    @Override
+    public boolean active(String code) {
+        return false;
     }
 
 }

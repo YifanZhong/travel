@@ -5,6 +5,7 @@
 /Users/aaa./travel/src/main/java/cn/itcast/travel/web/servlet/RegistUserServlet.java
 /Users/aaa./travel/src/main/java/cn/itcast/travel/domain/Seller.java
 /Users/aaa./travel/src/main/java/cn/itcast/travel/util/MailUtils.java
+/Users/aaa./travel/src/main/java/cn/itcast/travel/web/filter/CharchaterFilter.java
 /Users/aaa./travel/src/main/java/cn/itcast/travel/dao/UserDao.java
 /Users/aaa./travel/src/main/java/cn/itcast/travel/util/JedisUtil.java
 /Users/aaa./travel/src/main/java/cn/itcast/travel/domain/Favorite.java
