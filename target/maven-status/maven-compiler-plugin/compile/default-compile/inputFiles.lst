@@ -9,7 +9,9 @@
 /Users/aaa./travel/src/main/java/cn/itcast/travel/dao/UserDao.java
 /Users/aaa./travel/src/main/java/cn/itcast/travel/util/JedisUtil.java
 /Users/aaa./travel/src/main/java/cn/itcast/travel/domain/Favorite.java
+/Users/aaa./travel/src/main/java/cn/itcast/travel/web/servlet/ActiveUserServlet.java
 /Users/aaa./travel/src/main/java/cn/itcast/travel/service/impl/UserServiceImpl.java
+/Users/aaa./travel/src/main/java/cn/itcast/travel/web/servlet/LoginServlet.java
 /Users/aaa./travel/src/main/java/cn/itcast/travel/util/JDBCUtils.java
 /Users/aaa./travel/src/main/java/cn/itcast/travel/web/servlet/CheckCodeServlet.java
 /Users/aaa./travel/src/main/java/cn/itcast/travel/domain/ResultInfo.java
