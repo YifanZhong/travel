@@ -142,7 +142,7 @@
 
                     if (checkUsername() && checkPassword() && checkEmail() && checkName() && checkPhonenumber() && checkBirthday() && checkCheck()){
                         //校验通过，发送ajax请求，提交表单的数据    username=zhangsan&password=12345
-                        $.post("registUserServlet", $(this).serialize(), function (data) {
+                        $.post("user/regist", $(this).serialize(), function (data) {
                             //处理服务器相应的数据  data  {}
 
 							if (data.flag){
