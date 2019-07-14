@@ -42,9 +42,7 @@ public class BaseServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-
-
-
-
     }
+
+
 }
